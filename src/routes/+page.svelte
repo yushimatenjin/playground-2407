@@ -1,3 +1,3 @@
-<p>WebGLライブラリーの調査用のページです。</p>  
+<p>This page is for investigating WebGL libraries.</p>  
 
-<p>各種ローダーを利用したglTF, VRMファイルの読み込みをテストしています。</p>
+<p>We are testing the loading of glTF and VRM files using various loaders.</p>
