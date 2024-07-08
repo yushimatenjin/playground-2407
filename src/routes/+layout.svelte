@@ -24,13 +24,13 @@ const currentPath = derived(page, ($page) => $page.url.pathname);
       <div class="library">PlayCanvas</div>
       <div class="loader">glTFLoader</div>
       <div class="model">model.vrm</div>
-      <div class="note">VRMへの公式対応は現在無し</div>
+      <div class="note">No official support for VRM currently</div>
     </a>
     <a href="/babylonjs" rel="external" class:current={$currentPath === "/babylonjs"}>
       <div class="library">Babylon.js</div>
       <div class="loader">SceneLoader</div>
       <div class="model">model.glb</div>
-      <div class="note">babylon-vrm-loaderに変更予定</div>
+      <div class="note">Planned to change to babylon-vrm-loader</div>
     </a>
   </div>
   <div class="content">
@@ -69,15 +69,15 @@ const currentPath = derived(page, ($page) => $page.url.pathname);
     font-size: 1em;
   }
 
-  /* ローダーを追加 */
+  /* Add loader */
   .loader::before {
-    content: "ローダー: ";
+    content: "Loader: ";
     color: gray;
     font-size: 0.8em;
   }
-  /* modelの左側にファイル形式という::beforeに文字を追加 */
+  /* Add text to the left of the model indicating the file format */
   .model::before {
-    content: "ファイル形式: ";
+    content: "File format: ";
     color: gray;
     font-size: 0.8em;
   }
@@ -88,7 +88,7 @@ const currentPath = derived(page, ($page) => $page.url.pathname);
   }
 
   .note::before {
-    content: "※";
+    content: "*";
     color: gray;
     font-size: 0.8em;
   }
